@@ -46,22 +46,21 @@
 
 //2 – Peça para o usuário informar dois números e a operação matemática que ele deseja(+, -, *ou / ), mostre o resultado da conta de acordo com a operação que ele escolheu
 
-
-using namespace std;
+/*using namespace std;
 
 int main() {
 	setlocale(LC_ALL, "pt_BR.UTF-8");
 
-	int num1;
+	float num1;
 	cout << "Digite um número: ";
 	cin >> num1;
 
-	int num2;
+	float num2;
 	cout << "Digite um número: ";
 	cin >> num2;
 
 	char simbolo;
-	cout << "Que operação você deseja fazer: ";
+	cout << "Que operação você deseja fazer[SÍMBOLO]: ";
 	cin >> simbolo;
 
 
@@ -80,9 +79,15 @@ int main() {
 		cout << num1 * num2;
 		break;
 	case '/':
-		cout << "A conta deu ";
-		cout << num1 / num2;
-		break;
+		if (num2 == 0) {
+			cout << "Ímpossível dividir por zero\n";
+			break;
+		}
+		else {
+			cout << "A conta deu ";
+			cout << num1 / num2;
+			break;
+		}
 
 	default:
 		cout << "Símbolo inválido";
@@ -91,6 +96,55 @@ int main() {
 
 
 	return 0;
-}
+}*/
 
+//3 – Peça para o usuário digitar uma letra, se a letra for A, E, I, O ou U, mostre vogal, caso ele digite outra letra, mostre consoante
 
+//using namespace std;
+//
+//int main() {
+//	setlocale(LC_ALL, "pt_BR.UTF-8");
+//
+//	char letra;
+//	cout << "Digite uma letra: ";
+//	cin >> letra;
+//
+//	switch (letra)
+//	{
+//	case 'a':
+//		cout << "Vogal";
+//		break;
+//	case 'e':
+//		cout << "Vogal";
+//		break;
+//	case 'i':
+//		cout << "Vogal";
+//		break;
+//	case 'o':
+//		cout << "Vogal";
+//		break;
+//	case 'u':
+//		cout << "Vogal";
+//		break;
+//	case 'A':
+//		cout << "Vogal";
+//		break;
+//	case 'E':
+//		cout << "Vogal";
+//		break;
+//	case 'I':
+//		cout << "Vogal";
+//		break;
+//	case 'O':
+//		cout << "Vogal";
+//		break;
+//	case 'U':
+//		cout << "Vogal";
+//		break;
+//	default:
+//		cout << "Consoante";
+//		break;
+//	}
+//
+//	return 0;
+//}
